@@ -1,0 +1,19 @@
+servers:
+- host: 127.0.0.1
+  port: 5432
+  user: postgres
+  password: password
+  databases:
+  - postgres
+  period: 300ms
+  timeout: 5
+  connect: transaction
+- host: 127.0.0.1
+  port: 6432
+  user: postgres
+  password: password
+  databases:
+  - postgres
+  period: 300ms
+  timeout: 5
+  connect: session
